@@ -7,10 +7,12 @@
 <body>
     <div>
         <h1>Hello!</h1>
-        <div>
-            <textarea id="w3review" name="w3review" rows="20" cols="50"></textarea>
-        </div>
-        <input type="submit" value="Reverse!">
+        <form action="{% url 'reverse' %}">
+            <div>
+                <textarea id="w3review" name="usertext" rows="20" cols="50"></textarea>
+            </div>
+            <input type="submit" value="Reverse!">
+        </form>
     </div>
 </body>
 </html>
